@@ -2,18 +2,16 @@
 
 namespace Froala\NovaFroalaField\Models;
 
+use Data\MongoDB\MongoDBModel;
 use Froala\NovaFroalaField\Froala;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
+use function get_class;
 
-class PendingAttachment extends Model
+class PendingAttachment extends MongoDBModel
 {
-    /**
-     * The table associated with the model.
-     *
-     * @var string
-     */
-    protected $table = 'nova_pending_froala_attachments';
+
+    protected $collection = 'froala_pending_attachments';
 
     /**
      * The attributes that aren't mass assignable.

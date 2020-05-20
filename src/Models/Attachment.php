@@ -2,17 +2,19 @@
 
 namespace Froala\NovaFroalaField\Models;
 
+use Data\MongoDB\MongoDBModel;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 
-class Attachment extends Model
+class Attachment extends MongoDBModel
 {
+    protected $collection = 'froala_attachments';
+
     /**
      * The table associated with the model.
      *
      * @var string
      */
-    protected $table = 'nova_froala_attachments';
 
     /**
      * The attributes that aren't mass assignable.
