@@ -1,17 +1,5 @@
 {
     "name": "trafficfox/nova-froala-field",
-    "description": "A Laravel Nova Froala WYSIWYG Editor Field.",
-    "keywords": [
-        "laravel",
-        "nova",
-        "field",
-        "wysiwyg",
-        "froala",
-        "editor"
-    ],
-    "homepage": "https://github.com/froala/nova-froala-field",
-    "license": "MIT",
-
     "repositories": [
         {
             "type": "composer",
